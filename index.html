@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenish_main</title>
+  <link rel="stylesheet" href="./main.css">
+  <link rel="shortcut icon" href="./img/logo_s_NEWcopy.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Nanum Gothic", sans-serif;
+      font-size: 14px;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--***************   header   ******************-->
+
+
+  <header class="header" id="header">
+    <div class="header_top">
+      <ul>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">장바구니</a></li>
+        <li><a href="#">마이페이지</a></li>
+      </ul>
+    </div><!--header_top-->
+
+    <div class="header_logo">
+      <a href="./index.html"><img src="./img/logo_s_NEWcopy.png" alt="헤더로고"></a>
+    </div> <!--header_logo-->
+
+    <div class="header_search">
+      <div class="hs_box">
+        <input type="search">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+  </header> <!--header-->
+
+  <nav class="header_gnb_outer">
+    <div class="header_gnb">
+      <ul class="gnb_main">
+        <li><a href="./sub/sub.html">베스트</a></li>
+        <li><a href="./sub/sub.html">전체상품</a></li>
+        <li>식물▼
+          <div class="sub_menu">
+            <div class="sub_img">
+              <img src="./img/submenu_img.jpg" alt="서브메뉴01">
+            </div>
+            <ul class="sub_list">
+              <li><a href="./sub/sub.html">전체</a></li>
+              <li><a href="./sub/sub.html">행잉식물</a></li>
+              <li><a href="./sub/sub.html">공기정화</a></li>
+              <li><a href="./sub/sub.html">선인장/다육식물</a></li>
+            </ul>
+          </div>
+        </li> <!--식물-->
+
+        <li>화분▼
+          <div class="sub_menu">
+            <div class="sub_img">
+              <img src="./img/submenu_img02.jpg" alt="서브메뉴02">
+            </div>
+            <ul class="sub_list">
+              <li><a href="./sub/sub.html">전체</a></li>
+              <li><a href="./sub/sub.html">단독화분</a></li>
+              <li><a href="./sub/sub.html">화분커버</a></li>
+            </ul>
+          </div>
+        </li> <!--화분-->
+
+        <li>선물/세트▼
+          <div class="sub_menu">
+            <div class="sub_img">
+              <img src="./img/submenu_img03.jpg" alt="서브메뉴03">
+            </div>
+            <ul class="sub_list">
+              <li><a href="./sub/sub.html">전체</a></li>
+              <li><a href="./sub/sub.html">식물+커버</a></li>
+              <li><a href="./sub/sub.html">선물용식물</a></li>
+            </ul>
+          </div>
+        </li> <!--선물/세트-->
+
+        <li><a href="./sub/sub.html">쇼퍼블</a></li>
+      </ul> <!--gnb_main-->
+
+      <ul class="gnb_sub03">
+        <li><a href="./sub/sub.html">브랜드소개</a></li>
+        <li><a href="./sub/sub.html">고객센터</a></li>
+      </ul> <!--gnb_sub-->
+    </div> <!--header_gnb-->
+  </nav>
+
+
+
+
+  <!--***************   banner   ******************-->
+
+  <div class="banner_zone">
+    <div class="visual_main">
+      <img src="./img/visual_main.png" alt="비주얼메인">
+    </div> <!--visual_main-->
+
+    <div class="sub_banner">
+      <input type="radio" name="s_banner" id="s_banner01" checked>
+      <input type="radio" name="s_banner" id="s_banner02">
+      <input type="radio" name="s_banner" id="s_banner03">
+
+      <div class="sheet">
+        <div class="bn_sheet01">
+          <a href="./detail/detail.html" class="sh01_img">
+            <img src="./img/sub_banner01.png" alt="서브1">
+          </a>
+
+          <label for="s_banner03" class="sh01_left"></label>
+          <label for="s_banner02" class="sh01_right"></label>
+        </div> <!--bn_sheet01-->
+
+        <div class="bn_sheet02">
+
+          <a href="./detail/detail.html" class="sh02_img">
+            <img src="./img/sub_banner02.png" alt="서브2">
+          </a>
+
+
+          <label for="s_banner01" class="sh02_left"></label>
+          <label for="s_banner03" class="sh02_right"></label>
+        </div> <!--bn_sheet02-->
+
+        <div class="bn_sheet03">
+
+          <a href="./detail/detail.html" class="sh03_img">
+            <img src="./img/sub_banner03.png" alt="서브3">
+          </a>
+
+
+          <label for="s_banner02" class="sh03_left"></label>
+          <label for="s_banner01" class="sh03_right"></label>
+        </div> <!--bn_sheet03-->
+
+      </div><!--sheet-->
+
+
+      <div class="indi">
+        <label for="s_banner01"></label>
+        <label for="s_banner02"></label>
+        <label for="s_banner03"></label>
+      </div>
+    </div> <!--sub_banner-->
+  </div> <!--banner_zone-->
+
+
+
+  <!--***************   new  ******************-->
+
+
+  <p class="main_title title">신상품</p>
+  <a href="./sub/sub.html" class="main_more more">더보기</a>
+
+  <div class="new product_box">
+
+    <div class="new01 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/new01.jpg" alt="신상품01">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>[식물+화분커버] 이오난사 공기정화식물</p>
+          <div class="pt_bottom">
+            <p>22,000원<span>12%</span></p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--new01-->
+
+
+    <div class="new02 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/new02.jpg" alt="신상품02">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>아비스고사리 키우기 쉬운 식물</p>
+          <div class="pt_bottom">
+            <p>22,000원<span>8%</span></p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--new02-->
+
+    <div class="new03 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/new03.png" alt="신상품03">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>몬스테라 공기정화식물</p>
+          <div class="pt_bottom">
+            <p>48,000원</p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--new03-->
+
+    <div class="new04 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/new04.jpg" alt="신상품04">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>[식물+화분커버] 피쉬본 생선뼈 선인장</p>
+          <div class="pt_bottom">
+            <p>29,500원<span>35%</span></p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--new04-->
+
+  </div> <!--new product_box-->
+
+
+
+
+  <!--***************   beginner   ******************-->
+
+  <p class="main_title title">입문자 추천</p>
+  <a href="./sub/sub.html" class="main_more more">더보기</a>
+
+  <div class="beginner product_box">
+
+    <div class="beginner01 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/beginner01.jpg" alt="입문자01">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>무늬 아비스 공기정화식물</p>
+          <div class="pt_bottom">
+            <p>25,000원</p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--beginner01-->
+
+
+    <div class="beginner02 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/beginner02.jpg" alt="입문자02">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>[식물+화분커버] 나비란 공기정화식물</p>
+          <div class="pt_bottom">
+            <p>32,000원<span>23%</span></p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--beginner02-->
+
+    <div class="beginner03 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/beginner03.jpg" alt="입문자03">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>행잉 립살리스 화이트 옐로우팟</p>
+          <div class="pt_bottom">
+            <p>48,000원<span>12%</span></p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--beginner03-->
+
+    <div class="beginner04 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/beginner04.jpg" alt="입문자04">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>[식물+화분커버] 이오난사 공기정화식물</p>
+          <div class="pt_bottom">
+            <p>22,000원<span>8%</span></p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--beginner04-->
+
+  </div> <!--beginner product_box-->
+
+  <!--***************   set   ******************-->
+
+  <p class="main_title title">세트상품</p>
+  <a href="./sub/sub.html" class="main_more more">더보기</a>
+
+  <div class="set product_box">
+
+    <div class="set01 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/set01.jpg" alt="세트01">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>[식물+화분커버] 미니보석금전수</p>
+          <div class="pt_bottom">
+            <p>32,000원<span>38%</span></p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--set01-->
+
+
+    <div class="set02 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/set02.jpg" alt="세트02">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>[식물+화분커버] 수형 바로크벤자민</p>
+          <div class="pt_bottom">
+            <p>43,000원</p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--set02-->
+
+    <div class="set03 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/set03.jpg" alt="세트03">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>[식물+화분커버] 나비란 공기정화식물</p>
+          <div class="pt_bottom">
+            <p>32,000원<span>23%</span></p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--set03-->
+
+    <div class="set04 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/set04.jpg" alt="세트04">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>[식물+화분커버] 이오난사 공기정화식물</p>
+          <div class="pt_bottom">
+            <p>22,000원<span>8%</span></p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--set04-->
+
+    <div class="set05 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/set05.jpg" alt="세트05">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>[식물+화분커버] 몬스테라 공기정화식물</p>
+          <div class="pt_bottom">
+            <p>38,500원</p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--set05-->
+
+
+    <div class="set06 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/set06.jpg" alt="세트06">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>[식물+화분커버] 이오난사 공기정화식물</p>
+          <div class="pt_bottom">
+            <p>22,000원<span>8%</span></p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--set06-->
+
+    <div class="set07 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/set07.jpg" alt="세트07">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>[식물+화분커버] 코브라 아비스</p>
+          <div class="pt_bottom">
+            <p>36,100원<span>8%</span></p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--set07-->
+
+    <div class="set08 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/set08.jpg" alt="세트08">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>[식물+화분커버] 덕구리난 키우기 쉬운 식물</p>
+          <div class="pt_bottom">
+            <p>39,000원</p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--set08-->
+
+  </div> <!--set product_box-->
+
+
+
+  <!--***************   Shoppable   ******************-->
+
+  <p class="main_title title">쇼퍼블</p>
+  <a href="./sub/sub.html" class="main_more more">더보기</a>
+  <div class="Shoppable_box">
+    <div class="shop_img">
+      <img src="./img/shoppable.jpg" alt="쇼퍼블이미지">
+    </div>
+
+    <div class="Shoppable">
+
+      <div class="shop_item01 shop_item">
+        <div class="shop_btn01 shop_btn"></div>
+        <div class="shop_box01 shop_box">
+          <a href="./detail/detail.html">
+            <div class="sbox_img"><img src="./img/shop01.jpg" alt="쇼퍼블01"></div>
+            <div class="sbox_txt">
+              <p>[화분+커버] 미니 틸란드시아</p>
+              <p>22,000원</p>
+            </div>
+            <div class="sh_arrow">
+              <img src="./img/shop_right_icon.png" alt="박스화살표">
+            </div>
+          </a>
+        </div> <!--shop_box01-->
+      </div> <!--shop_item01-->
+
+      <div class="shop_item02 shop_item">
+        <div class="shop_btn02 shop_btn"></div>
+        <div class="shop_box02 shop_box">
+          <a href="./detail/detail.html">
+            <div class="sbox_img"><img src="./img/shop02.jpg" alt="쇼퍼블02"></div>
+            <div class="sbox_txt">
+              <p>[화분+커버] 미니 이오난사</p>
+              <p>25,500원</p>
+            </div>
+            <div class="sh_arrow">
+              <img src="./img/shop_right_icon.png" alt="박스화살표">
+            </div>
+          </a>
+        </div> <!--shop_box02-->
+      </div> <!--shop_item02-->
+
+      <div class="shop_item03 shop_item">
+        <div class="shop_btn03 shop_btn"></div>
+        <div class="shop_box03 shop_box">
+          <a href="./detail/detail.html">
+            <div class="sbox_img"><img src="./img/shop03.jpg" alt="쇼퍼블03"></div>
+            <div class="sbox_txt">
+              <p>[화분+커버] 미니 보석금전수</p>
+              <p>32,000원</p>
+            </div>
+            <div class="sh_arrow">
+              <img src="./img/shop_right_icon.png" alt="박스화살표">
+            </div>
+          </a>
+        </div> <!--shop_box03-->
+      </div> <!--shop_item03-->
+
+      <div class="shop_item04 shop_item">
+        <div class="shop_btn04 shop_btn"></div>
+        <div class="shop_box04 shop_box">
+          <a href="./detail/detail.html">
+            <div class="sbox_img"><img src="./img/shop04.jpg" alt="쇼퍼블04"></div>
+            <div class="sbox_txt">
+              <p>립살리스</p>
+              <p>19,800원</p>
+            </div>
+            <div class="sh_arrow">
+              <img src="./img/shop_right_icon.png" alt="박스화살표">
+            </div>
+          </a>
+        </div> <!--shop_box04-->
+      </div> <!--shop_item04-->
+
+      <div class="shop_item05 shop_item">
+        <div class="shop_btn05 shop_btn"></div>
+        <div class="shop_box05 shop_box">
+          <a href="./detail/detail.html">
+            <div class="sbox_img"><img src="./img/shop05.jpg" alt="쇼퍼블05"></div>
+            <div class="sbox_txt">
+              <p>페페로미아</p>
+              <p>15,000원</p>
+            </div>
+            <div class="sh_arrow">
+              <img src="./img/shop_right_icon.png" alt="박스화살표">
+            </div>
+          </a>
+        </div> <!--shop_box5-->
+      </div> <!--shop_item05-->
+
+    </div> <!--Shoppable-->
+  </div> <!--Shoppable_box-->
+
+
+  <p class="main_title title">전체상품</p>
+  <a href="./sub/sub.html" class="main_more more">더보기</a>
+
+  <div class="all product_box">
+
+    <div class="all01 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/all01.jpg" alt="전체01">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>[선물용식물] 스프링 골풀 헤비부츠 팟</p>
+          <div class="pt_bottom">
+            <p>33,500원<span>44%</span></p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--all01-->
+
+    <div class="all02 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/all02.jpg" alt="전체02">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>황칠나무 컬링 공기정화식물</p>
+          <div class="pt_bottom">
+            <p>48,000원<span>12%</span></p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--all02-->
+
+    <div class="all03 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/all03.jpg" alt="전체03">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>녹탑 다육이 미니 화분</p>
+          <div class="pt_bottom">
+            <p>19,000원</p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--all03-->
+
+    <div class="all04 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/all04.jpg" alt="전체04">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>[선물용식물] 소엽 풍란 미니 동양난</p>
+          <div class="pt_bottom">
+            <p>26,000원</p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--all04-->
+
+    <div class="all05 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/all05.jpg" alt="전체05">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>[식물+화분커버] 이오난사 공기정화식물</p>
+          <div class="pt_bottom">
+            <p>22,000원<span>12%</span></p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--all05-->
+
+    <div class="all06 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/all06.jpg" alt="전체06">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>아비스고사리 키우기 쉬운 식물</p>
+          <div class="pt_bottom">
+            <p>22,000원<span>8%</span></p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--all06-->
+
+    <div class="all07 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/all07.png" alt="전체07">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>몬스테라 공기정화식물</p>
+          <div class="pt_bottom">
+            <p>48,000원</p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--all07-->
+
+    <div class="all08 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/all08.jpg" alt="전체08">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>[식물+화분커버] 피쉬본 생선뼈 선인장</p>
+          <div class="pt_bottom">
+            <p>33,500원<span>44%</span></p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--all08-->
+
+    <div class="all09 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/all09.jpg" alt="전체09">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>무늬 아비스 공기정화식물</p>
+          <div class="pt_bottom">
+            <p>25,000원</p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--all09-->
+
+    <div class="all10 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/all10.jpg" alt="전체10">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+      <a href="../detail/detail.html">
+        <div class="product_txt">
+          <p>[식물+화분커버] 나비란 공기정화식물</p>
+          <div class="pt_bottom">
+            <p>32,000원<span>23%</span></p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--all10-->
+
+    <div class="all11 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/all11.jpg" alt="전체11">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>행잉 립살리스 화이트 옐로우팟</p>
+          <div class="pt_bottom">
+            <p>48,000원<span>12%</span></p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--all11-->
+
+    <div class="all12 product">
+      <div class="productAll">
+        <a href="./detail/detail.html">
+          <div class="product_img">
+            <img src="./img/all12.jpg" alt="전체12">
+          </div> <!--product_img-->
+
+          <div class="product_overlay overlay"></div><!--overlay-->
+        </a>
+
+        <div class="pro_button">
+          <button class="cart">
+            <div><img src="./img/shopping_cart_icon.png" alt="장바구니"></div>
+          </button> <!--cart-->
+          <button class="bookmark">
+            <div><img src="./img/bookmark_icon.png" alt="찜하기"></div>
+          </button> <!--bookmark-->
+        </div><!--pro_button-->
+      </div> <!--.productAll-->
+      <a href="./detail/detail.html">
+        <div class="product_txt">
+          <p>[선물용식물] 필레아페페 현무암 돌화분</p>
+          <div class="pt_bottom">
+            <p>19,800원</p>
+            <p>3,500원</p>
+          </div>
+
+          <div class="deli_icon"><img src="./img/delivery_icon.png" alt="배달"></div>
+        </div>
+      </a>
+    </div> <!--all12-->
+  </div><!--all product_box-->
+
+  <footer class="footer_outer">
+    <div class="footer">
+      <section class="f_top">
+        <div class="f_logo">
+          <img src="./img/logo_footer.png" alt="푸터로고">
+        </div>
+
+        <div class="ftop_box">
+          <div class="f_top01">
+            <p class="f_title">고객센터</p>
+            <p class="f_title">1234-1234</p>
+            <p>평일 09:00~18:00</p>
+            <p>(점심시간 12:00~13:00)</p>
+            <p>토/일/공휴일 휴무</p>
+            <a href="#">고객센터게시판 ></a>
+          </div><!--f_top01-->
+
+          <div class="f_top02">
+            <p class="f_title">무통장 입금 안내</p>
+            <p>카카오뱅크</p>
+            <p>3333-01-23456-78</p>
+            <p>예금주명: 그리니쉬</p>
+            <a href="#">브랜드소개 ></a>
+          </div><!--f_top02-->
+
+          <div class="f_top03">
+            <p class="f_title">반품 주소 안내</p>
+            <p>주소: 부산광역시 부산진구 양정동 123번길 45</p>
+            <p>우편번호: 123-123</p>
+            <a href="#">배송조회 ></a>
+          </div><!--f_top03-->
+        </div> <!--ftop_box-->
+      </section> <!--f_top-->
+
+      <section class="f_bottom">
+        <div class="fb_left">
+          <p>(주)그리니쉬 대표이사 양지은 | <a href="#">사업자등록번호 123-45-678910</a> | 통신판매업신고번호 제2015-부산진구-1234호 | 개인정보보호책임자 양지은 </p>
+          <p>대표전화 1234-1234 | FAX 051-123-4567 | greenish@naver.com | 부산광역시 부산진구 양정동 123번길 45 | <a
+              href="http://www.instagram.com"> instagram@greenish_p</a> | <a href="http://www.youtube.com">youyube</a>
+          </p>
+        </div>
+        <div class="fb_right">
+          <a href="http://www.instagram.com" class="insta"><img src="./img/instagram_icon.png" alt="인스타그램"></a>
+
+          <a href="http://www.youtube.com" class="youtube"><img src="./img/youtube_icon.png" alt="유투브"></a>
+        </div>
+      </section>
+  </footer> <!--footer_outer-->
+
+  <a href="#header" class="top_btn"></a>
+
+  </div>
+
+</body>
+
+</html>
