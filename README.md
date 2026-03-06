@@ -159,3 +159,129 @@
 }
 …
 ```
+
+/* Tab Menu css */
+```css
+#tab_btn01:checked~ .sub_tab .label_box label:nth-child(1), 
+#tab_btn02:checked~ .sub_tab .label_box label:nth-child(2), 
+#tab_btn03:checked~ .sub_tab .label_box label:nth-child(3), 
+#tab_btn04:checked~ .sub_tab .label_box label:nth-child(4) {
+  border-bottom: 1px solid #00980A;
+}
+#tab_btn01, #tab_btn02, #tab_btn03, #tab_btn04 {
+  display: none;
+}
+
+.tab_sh .sh {display: none;}
+#tab_btn01:checked ~ .sub_tab .tab_sh .tab_sh01,
+#tab_btn02:checked ~ .sub_tab .tab_sh .tab_sh02,
+#tab_btn03:checked ~ .sub_tab .tab_sh .tab_sh03,
+#tab_btn04:checked ~ .sub_tab .tab_sh .tab_sh04 {display: block;}
+```
+
+/* hover 마이크로 애미매이션 css */
+```css
+.detail_outer .detail .detail_left .pd_small_img li:hover img {
+  transform: scale(1.1);
+}
+```
+
+/* move bar html */
+```html
+<nav class="move_bar01 move_bar" id="data">
+    <ul>
+        <li><a href="#data">상품정보</a></li>
+        <li><a href="#review">리뷰</a></li>
+        <li><a href="#delivery">배송/환불</a></li>
+        <li><a href="#recommend">추천</a></li>
+   </ul>
+</nav>
+```
+
+/* move bar css */
+```css
+.move_bar {
+  width: 804px; height: 50px;
+  margin: 0 auto;
+  background-color: #eee;
+  margin-bottom: 5px;
+}
+.move_bar ul {
+  width: 804px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.move_bar ul li {
+  width: 200px;  
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+}
+.move_bar01 ul li:nth-child(1) {
+  border-bottom: 1px solid #00980A;
+}
+.move_bar02 ul li:nth-child(2) {
+  border-bottom: 1px solid #00980A;
+}
+.move_bar03 ul li:nth-child(3) {
+  border-bottom: 1px solid #00980A;
+}
+.move_bar04 ul li:nth-child(4) {
+  border-bottom: 1px solid #00980A;
+}
+
+.move_bar ul li a {
+  font-size: 20px;
+}
+.move_bar ul li:hover a {
+  color: #17451F;
+}
+```
+
+/* 상세페이지 토글 html */
+```html
+<input type="checkbox" id="data_btn">
+<div class="detail_data">
+    <img src="./img/detail_page01.png" alt="상품설명01">
+    <img src="./img/detail_page02.png" alt="상품설명02">
+
+    <label for="data_btn" class="open">상세정보 펼쳐보기 <i class="fa-solid fa-angle-down"></i></label>
+    <label for="data_btn" class="close">상세정보 닫기 <i class="fa-solid fa-chevron-up"></i></label>
+</div>
+```
+
+/* 상세페이지 토글 css */
+```css
+#data_btn {display: none;}
+#data_btn:checked ~ .detail_data img:nth-child(2) {display: block;}
+#data_btn ~ .detail_data img:nth-child(2) {display: none;}
+
+#data_btn ~ .detail_data label,
+#data_btn:checked ~ .detail_data label {display: none;}
+#data_btn ~ .detail_data .open {display: block;}
+#data_btn:checked ~ .detail_data .close {display: block;}
+
+.detail_data label {
+  width: 804px; height: 50px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  color: #666;
+  border: 1px solid #666; box-sizing: border-box;
+  cursor: pointer;
+}
+.detail_data label i {
+   font-size: 24px; 
+   color: #666;
+}
+
+.detail_data .open{position: relative;}
+.detail_data .open::before {
+  content: '';
+  display: block;
+  width: 957px; height: 130px;
+  background: linear-gradient(transparent,white);
+  position: absolute;
+  top: -135px;
+}
+```
