@@ -1,0 +1,73 @@
+[
+  {
+    "name": "양지은",
+    "id": "jieun01",
+    "pw": "e1234",
+    "email": "jieun01@naver.com",
+    "phone": "01012345678"
+    
+  },
+  {
+    "name": "김서연",
+    "id": "seoyeon01",
+    "pw": "y1234",
+    "email": "jieun01@gmail.com",
+    "phone": "01056781234"
+  },
+  {
+    "name": "전지현",
+    "id": "jihyun01",
+    "pw": "h1234",
+    "email": "jihyun01@nate.com",
+    "phone": "01011112222"
+  },
+  {
+    "name": "차은우",
+    "id": "eunwoo01",
+    "pw": "w1234",
+    "email": "eunwoo01.daum.net",
+    "phone": "01022223333"
+  },
+  {
+    "name": "류현지",
+    "id": "hyeonji01",
+    "pw": "j1234",
+    "email": "hyeonji01@naver.com",
+    "phone": "01033334444"
+  },
+  {
+    "name": "신경주",
+    "id": "kyungju01",
+    "pw": "z1234",
+    "email": "kyungju01h@nate.com",
+    "phone": "01044445555"
+  },
+  {
+    "name": "김밤비",
+    "id": "bombi01",
+    "pw": "b1234",
+    "email": "bombi01@daum.net",
+    "phone": "01055556666"
+  },
+  {
+    "name": "원빈",
+    "id": "bin01",
+    "pw": "n1234",
+    "email": "bin01@nate.com",
+    "phone": "01066667777"
+  },
+  {
+    "name": "박혜지",
+    "id": "hyeji01",
+    "pw": "i1234",
+    "email": "hyeji01@gmail.com",
+    "phone": "01077778888"
+  },
+  {
+    "name": "김한솔",
+    "id": "solkim01",
+    "pw": "s1234",
+    "email": "solkim01@nate.com",
+    "phone": "01088889999"
+  }
+]

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenish</title>
+  <link rel="shortcut icon" href="../img/logo_s_NEWcopy.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../css/find.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="../js/find.js"></script>
+
+  <!--google font cdn-->
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Nanum Gothic", sans-serif;
+      font-size: 14px;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    input,
+    label {
+      vertical-align: middle;
+      margin: 0;
+    }
+
+    input[type="checkbox"] {
+      accent-color: #00980A;
+    }
+  </style>
+
+</head>
+
+<body>
+  <section class="warp_outer">
+    <div class="wrap">
+      <p class="main_title">계정찾기</p>
+
+      <input type="radio" id="find_id" name="find" checked>
+      <input type="radio" id="find_pw" name="find">
+
+      <div class="label_box">
+        <label for="find_id">아이디 찾기</label>
+        <label for="find_pw">비밀번호 찾기</label>
+      </div> <!--label_box-->
+
+      <div class="find_sheet">
+        <div class="find_id">
+          <form action="" method="post">
+            <p>회원가입 시 등록한 성함과 전화번호를 입력해주세요</p>
+
+            <input type="text" name="username" placeholder="이름을 입력하세요" required autofocus>
+            <div class="tell">
+              <input type="tel" name="phone" placeholder="전화번호를 '-' 없이 입력하세요" required>
+              <button class="tel_btn" type="button">인증</button>
+            </div> <!--tell-->
+            <div class="t_atm atm">
+              <input type="text" class="atm_txt" placeholder="인증번호 6자리를 입력하세요.">
+              <p class="atm_count">03:00</p>
+              <button type="button" class="t_atm_btn atm_btn">
+                인증번호확인
+              </button>
+            </div> <!--t_atm-->
+
+            <button class="id_btn" type="submit">다음</button>
+
+
+            <div id="popup" class="popup">
+              <div class="popup_content">
+                <p id="popup_text"></p>
+                <div class="popup_btns">
+                  <a href="./login.html" id="to_login">로그인 페이지로</a>
+                  <a href="!#" id="to_find_pw">비밀번호찾기 페이지로</a>
+                </div> <!--popup_btns-->
+              </div> <!--popup_content-->
+            </div> <!--popup-->
+
+          </form>
+        </div> <!--find_id-->
+
+        <div class="find_pw">
+          <form action="" method="post">
+            <p>회원가입 시 등록한 아이디와 이메일을 입력해주세요</p>
+
+            <input type="text" name="user_id" placeholder="아이디를 입력하세요" required>
+            <div class="email">
+              <input type="email" name="email" placeholder="이메일을 입력하세요" required>
+              <span>@</span>
+              <select class="email_select" name="email_domain" required>
+                <option value="email">직접입력</option>
+                <option value="email01">naver.com</option>
+                <option value="email02">daum.net</option>
+                <option value="email03">hanmail.net</option>
+                <option value="email04">gmail.com</option>
+                <option value="email05">yohoo.com</option>
+              </select>
+              <button class="email_btn" type="button">인증</button>
+            </div> <!--email-->
+
+            <div class="e_atm atm">
+              <input type="text" class="atm_txt" placeholder="인증번호 6자리를 입력하세요.">
+              <p class="atm_count">03:00</p>
+              <button type="button" class="e_atm_btn atm_btn">인증번호확인</button>
+            </div> <!--e_atm-->
+
+            <button class="pw_btn" type="submit">다음</button>
+
+            <div id="popup" class="popup">
+              <div class="popup_content">
+                <p id="popup_text"></p>
+                <div class="popup_btns">
+                  <a href="./login.html" id="to_login">로그인 페이지로</a>
+                </div> <!--popup_btns-->
+              </div> <!--popup_content-->
+            </div> <!--popup-->
+          </form>
+        </div> <!--find_pw-->
+
+      </div> <!--find_sheet-->
+
+      <div class="back">
+        <a href="./login.html" class="login">돌아가기</a>
+        <a href="../index.html" class="home">메인화면</a>
+      </div>
+    </div> <!--wrap-->
+
+  </section><!--warp_outer-->
+
+</body>
+
+</html>

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenish</title>
+  <link rel="shortcut icon" href="../img/logo_s_NEWcopy.png" type="image/x-icon">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/join.css">
+
+  <!--jQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="../js/join.js" defer></script>
+  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script> <!--주소 API-->
+  
+<style>
+  /*******    default setting    ********/
+  * {
+    margin: 0; padding: 0;
+    font-family: "Nanum Gothic", sans-serif;
+  }
+  a {text-decoration: none; color: black;}
+  select {color: #444;}
+  ul {list-style: none;}
+  ol {padding-left: 20px; margin-left: 0;}
+  input, label {vertical-align: middle; font-size: 14px; margin: 0;}
+  input[type="checkbox"],
+  input[type="radio"] {accent-color: #00980A;}
+
+</style>
+</head>
+
+  
+
+<body>
+  <form action="" method="post">
+    <div class="wrap">
+      <p class="main_title">회원가입</p>
+      <p class="sub_title">기본정보<span>* 필수입력사항</span></p>
+      
+      <div class="id">아이디
+        <span class="asterisk">*</span>
+        <span class="desc">(영문 대문자+숫자 혼용 4-16자)</span>
+        <input id="user_id" type="text" placeholder="아이디를 입력하세요" required>
+        <button class="id_btn" type="button">중복확인</button>
+      </div> <!--id-->
+
+      <div class="pw">비밀번호
+        <span class="asterisk">*</span>
+        <input id="user_pw" type="password" placeholder="비밀번호를 입력하세요" required>
+      </div> <!--pw-->
+
+      <div class="pw_check">비밀번호 확인
+        <span class="asterisk">*</span>
+        <span class="desc">(영문 대소문자/숫자/특수문자 중<br>2가지 이상 조합, 8~16자)</span>
+        <input id="check_pw" type="password" placeholder="비밀번호 확인을 위해 재입력하세요" required>
+        <button class="pw_check_btn" type="button">암호확인</button>
+      </div> <!--pw_check-->
+
+      <div class="address">
+        <div class="top-row">
+          <span>주소</span>
+          <span class="asterisk">*</span>
+          <input class="postcode" type="text" placeholder="0000-0000" required>
+        <button class="address_btn" type="button">우편번호 찾기</button>
+        </div> <!--top-row-->
+        
+        <div class="row">
+          <input type="text" required id="row_address">
+          <input type="text" class="detail_address" placeholder="상세주소를 입력하세요">
+        </div> <!--row-->
+      </div> <!--address-->
+
+      <div class="email"> 이메일
+        <span class="asterisk">*</span>
+        <input type="text" required>
+        <span class="at">@</span>
+        <select class="email_select" required>
+            <option value="">직접입력</option>
+            <option value="email01">naver.com</option>
+            <option value="email02">daum.net</option>
+            <option value="email03">hanmail.net</option>
+            <option value="email04">gmail.com</option>
+            <option value="email05">yohoo.com</option>
+        </select>
+        <button class="email_btn" type="button">이메일인증</button>
+      </div> <!--email-->
+      
+      <div class="e_atm atm">
+        <input type="text" class="atm_txt" placeholder="인증번호 6자리를 입력하세요.">
+        <p class="atm_count">03:00</p>
+        <button type="button" class="e_atm_btn atm_btn">
+          인증번호확인
+        </button>
+      </div> <!--e_atm-->
+
+      <div class="birth">생년월일
+        <select>
+            <option value="">선택</option>
+            <option value="age1">2011</option>
+            <option value="age2">2010</option>
+            <option value="age3">2009</option>
+            <option value="age4">2008</option>
+            <option value="age5">2007</option>
+            <option value="age6">2006</option>
+            <option value="age7">2005</option>
+            <option value="age8">2004</option>
+            <option value="age9">2003</option>
+            <option value="age10">2002</option>
+            <option value="age11">2001</option>
+            <option value="age12">2000</option>
+            <option value="age13">1999</option>
+            <option value="age14">1998</option>
+            <option value="age15">1997</option>
+            <option value="age16">1996</option>
+            <option value="age17">1995</option>
+            <option value="age18">1994</option>
+            <option value="age19">1993</option>
+            <option value="age20">1992</option>
+            <option value="age21">1991</option>
+            <option value="age22">1990</option>
+            <option value="age23">1989</option>
+            <option value="age24">1988</option>
+            <option value="age25">1987</option>
+            <option value="age26">1986</option>
+            <option value="age27">1985</option>
+            <option value="age28">1984</option>
+            <option value="age29">1983</option>
+            <option value="age30">1982</option>
+            <option value="age31">1981</option>
+            <option value="age32">1980</option>
+            <option value="age33">1979</option>
+            <option value="age34">1978</option>
+            <option value="age35">1977</option>
+            <option value="age36">1976</option>
+            <option value="age37">1975</option>
+            <option value="age38">1974</option>
+            <option value="age39">1973</option>
+            <option value="age40">1972</option>
+            <option value="age41">1971</option>
+            <option value="age42">1970</option>
+            <option value="age43">1969</option>
+            <option value="age44">1968</option>
+            <option value="age45">1967</option>
+            <option value="age46">1966</option>
+            <option value="age47">1965</option>
+            <option value="age48">1964</option>
+            <option value="age49">1963</option>
+            <option value="age50">1962</option>
+            <option value="age51">1961</option>
+            <option value="age52">1960</option>
+            <option value="age53">1959</option>
+            <option value="age54">1958</option>
+            <option value="age55">1957</option>
+            <option value="age56">1956</option>
+            <option value="age57">1955</option>
+            <option value="age58">1954</option>
+            <option value="age59">1953</option>
+            <option value="age60">1952</option>
+            <option value="age61">1951</option>
+            <option value="age62">1950</option>
+            <option value="age63">1949</option>
+            <option value="age64">1948</option>
+            <option value="age65">1947</option>
+            <option value="age66">1946</option>
+            <option value="age67">1945</option>
+          </select>년
+
+          <select>
+            <option value="">선택</option>
+            <option value="m1">01</option>
+            <option value="m2">02</option>
+            <option value="m3">03</option>
+            <option value="m4">04</option>
+            <option value="m5">05</option>
+            <option value="m6">06</option>
+            <option value="m7">07</option>
+            <option value="m8">08</option>
+            <option value="m9">09</option>
+            <option value="m10">10</option>
+            <option value="m11">11</option>
+            <option value="m12">12</option>
+          </select>월
+
+          <select>
+            <option value="">선택</option>
+            <option value="a1">01</option>
+            <option value="a2">02</option>
+            <option value="a3">03</option>
+            <option value="a4">04</option>
+            <option value="a5">05</option>
+            <option value="a6">06</option>
+            <option value="a7">07</option>
+            <option value="a8">08</option>
+            <option value="a9">09</option>
+            <option value="a10">10</option>
+            <option value="a11">11</option>
+            <option value="a12">12</option>
+            <option value="a13">13</option>
+            <option value="a14">14</option>
+            <option value="a15">15</option>
+            <option value="a16">16</option>
+            <option value="a17">17</option>
+            <option value="a18">18</option>
+            <option value="a19">19</option>
+            <option value="a20">20</option>
+            <option value="a21">21</option>
+            <option value="a22">22</option>
+            <option value="a23">23</option>
+            <option value="a24">24</option>
+            <option value="a25">25</option>
+            <option value="a26">26</option>
+            <option value="a27">27</option>
+            <option value="a28">28</option>
+            <option value="a29">29</option>
+            <option value="a30">30</option>
+            <option value="a31">31</option>
+          </select>일
+      </div> <!--birth-->
+
+      <div class="sms">
+        <div class="sms_top">
+          <span>SMS 수신여부</span>
+          <span class="asterisk">*</span>
+          <input type="radio" id="sms_yes" name="sms" value="yes" checked>
+          <label for="sms_yes">동의함</label>
+          <input type="radio" id="sms_no" name="sms" value="no">
+          <label for="sms_no">동의안함</label>
+        </div> <!--sms_top-->
+        <p>주문 처리, 배송 진행 상황 안내 등 서비스 이용을 위한 알림을 SMS로 받는 것에 동의합니다.(* 이 항목은 동의하지 않아도 기본 서비스는 제공됩니다.)</p>
+      </div> <!--sms-->
+
+      <div class="choose"> 추천인아이디
+        <input type="text" placeholder="추천인 아이디를 입력하세요">
+        <button class="choose_btn" type="button">아이디확인</button>
+      </div><!--choose-->
+
+    </div> <!--wrap-->
+
+      <div class="terms">
+        <p class="sub_title">가입 약관 동의<span>* 필수약관</span></p>
+        <div class="terms_box">
+          <div class="total_agree">
+            <input id="total_agree" type="checkbox" required>
+            <label for="total_agree">전체 약관에 동의합니다</label> 
+          </div>
+          
+          <div class="terms01">
+            <input type="checkbox" id="open_terms01">
+
+            <p class="number_title">1. 이용약관 동의<span class="asterisk">*</span>
+              <label for="open_terms01" class="view_terms">약관 전문 보기 ></label>
+            </p> <!--number_title-->
+
+            <div class="all01 all">
+              <label for="open_terms01" class="close"><i class="fa-solid fa-x"></i></label>
+              <ul>
+                <li>제 1장 총칙
+                  <ul>
+                    <li>제 1조 (목적)
+                      <ul>
+                        <li>- 본 약관은 Greenish (이하 “회사”)가 제공하는 온라인 쇼핑몰 서비스(이하 “몰”)의 이용과 관련하여 회사와 이용자 간의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.</li>
+                      </ul>
+                    </li> <!--1-1-->
+
+                    <li> 제 2조 (정의)
+                      <ul>
+                        <li>- “몰”이란 회사가 재화 또는 용역(이하 “상품 등”)을 이용자에게 제공하기 위하여 정보통신설비를 이용해 거래할 수 있도록 설정한 온라인 쇼핑 공간을 의미합니다.</li>
+                        <li>- “이용자”란 몰에 접속하여 이 약관에 따라 서비스 제공을 받는 회원 또는 비회원을 뜻합니다.</li>
+                        <li>- “회원”이란 몰에 회원등록을 한 자로서, 계속적으로 서비스를 이용할 수 있는 자를 의미합니다.</li>
+                        <li>- “아이디”란 회원의 고유 식별 및 서비스 이용을 위해 회원이 정하고 회사가 승인한 문자 또는 문자와 숫자의 조합을 의미합니다.</li>
+                        <li>- “비밀번호”는 회원 본인 여부 확인을 위해 회원이 정한 문자, 숫자, 특수문자의 조합을 의미합니다.</li>
+                      </ul>
+                    </li> <!--1-2-->
+                  </ul>
+                </li> <!--1-->
+
+                <li>제 2장 약관의 게시 및 개정
+                  <ul>
+                    <li>제 3조 (약관의 명시와 개정)
+                      <ul>
+                        <li>- 회사는 이 약관을 이용자가 쉽게 알 수 있도록 몰의 초기 화면 또는 회원가입/결제 화면 등에 게시합니다. </li>
+                        <li>- 회사는 법령 변경, 운영 정책 변경 등 사유가 있을 경우 본 약관을 개정할 수 있으며, 개정 시 적용일자와 개정사유를 명시하여 몰 초기 화면에 공지합니다. </li>
+                        <li>- 개정된 약관은 공지된 날로부터 효력을 가지며, 기존에 체결된 계약에는 개정 전 약관이 적용됩니다. 다만, 이용자가 변경 후에도 서비스를 계속 이용하는 경우 변경된 약관에 동의한 것으로 봅니다.</li>
+                      </ul>
+                    </li><!--2-1-->
+                  </ul>
+                </li> <!--2-->
+
+                <li>제 3장 회원가입 및 계약의 성립
+                  <ul>
+                    <li>제 4조 (회원가입)
+                      <ul>
+                        <li>- 이용자는 약관에 동의하고 회사가 요청하는 정보를 제공하여 회원가입을 신청합니다.</li>
+                        <li>- 회사는 제공된 정보가 정확하고 유효할 경우 회원가입을 승인하며, 회원으로서의 권리를 부여합니다.</li>
+                        <li>- 회원가입을 위해 필요한 개인정보 항목(예: 이름, 이메일, 비밀번호, 연락처, 배송 주소 등)은 회사가 정한 최소한의 범위로 합니다.</li>
+                      </ul>
+                    </li> <!--3-1-->
+
+                    <li>제 5조 (회원 탈퇴 및 자격 상실)
+                      <ul>
+                        <li>- 회원은 언제든지 서비스 내 “회원 탈퇴”를 요청할 수 있으며, 회사는 탈퇴 요청을 받은 즉시 처리합니다. 탈퇴 후에는 회원 자격이 상실되며, 관련 정보는 개인정보처리방침에 따라 처리됩니다.</li>
+                      </ul>
+                    </li> <!--3-2-->
+                  </ul>
+                </li><!--3-->
+
+                <li>제 4장 서비스 이용 및 결제
+                  <ul>
+                    <li>제6조 (서비스 제공)
+                      <ul>
+                        <li>- 회사는 상품 정보 제공, 주문 접수, 결제 처리, 배송, 고객상담 등의 서비스를 제공합니다.</li>
+                      </ul>
+                    </li> <!--4-1-->
+                    <li>제 7조 (결제 및 대금 지급)
+                      <ul>
+                        <li>- 이용자는 회사가 제공하는 결제 수단(신용카드, 계좌이체, 간편결제 등)을 통해 상품 대금을 지급합니다.</li>
+                        <li>- 결제 완료 이후 회사는 즉시 주문 처리를 시작하며, 결제 정보가 정상적이지 않거나 지급 정보가 누락된 경우 주문을 취소할 수 있습니다.</li>
+                      </ul>
+                    </li> <!--4-2-->
+                  </ul>
+                </li><!--4-->
+
+                <li>제 5장 청약철회·반품·환불
+                  <ul>
+                    <li>제 8조 (청약철회 등)
+                      <ul>
+                        <li>- 이용자는 상품 수령 후 7일 이내에 청약철회(반품)를 요청할 수 있습니다. 다만, 상품의 특성상 재판매가 불가하거나 훼손된 경우에는 예외가 될 수 있습니다.</li>
+                        <li>- 단순 변심으로 인한 반품 시 왕복 배송비는 이용자가 부담할 수 있으며, 상품이 훼손되었거나 재화 등의 가치가 현저히 감소한 경우 환불이 제한될 수 있습니다.</li>
+                        <li>- 회사는 재화 공급이 불가능할 경우 지체 없이 그 사실을 이용자에게 알리고 이미 받은 대금을 즉시 환불합니다.</li>
+                      </ul>
+                    </li><!--5-1-->
+                  </ul>
+                </li><!--5-->
+
+                <li>제 6장 회원의 의무 및 제한
+                  <ul>
+                    <li>제 9조 (회원의 의무)
+                      <ul>
+                        <li>- 회원은 아이디와 비밀번호를 안전하게 관리해야 하며, 제3자에게 제공하거나 양도할 수 없습니다.</li>
+                        <li>- 회원은 본 약관, 관련 법령, 회사의 공지사항 및 운영정책을 준수해야 하며, 허위 정보 등록, 불법 행위, 공서양속 위반 등의 행위를 해서는 안 됩니다.</li>
+                      </ul>
+                    </li><!--6-1-->
+                  </ul>
+                </li><!--6-->
+
+                <li>제 7장 저작권 등 지적재산권
+                  <ul>
+                    <li>제 10조 (저작권 및 지적재산권)
+                      <ul>
+                        <li>- 몰에서 제공되는 모든 콘텐츠(텍스트, 이미지, 디자인, 로고 등)의 저작권 및 기타 지적재산권은 회사에 귀속됩니다.</li>
+                        <li>- 이용자는 회사의 사전 동의 없이 콘텐츠를 복제, 전송, 출판, 배포, 방송, 전시, 광고 등에 사용할 수 없습니다.</li>
+                        <li>- 약관 위반 또는 지적재산권 침해 시 회사는 이용 제한 및 법적 조치를 취할 수 있습니다.</li>
+                      </ul>
+                    </li><!--7-1-->
+                  </ul>
+                </li><!--7-->
+
+                <li>제 8장 면책 및 책임 제한
+                  <ul>
+                    <li>제 11조 (면책조항)
+                      <ul>
+                        <li>- 천재지변, 불가항력, 통신 장애, 서버 오류, 해킹, 회원의 귀책사유 등으로 인한 서비스 중단이나 손해에 대해 회사는 책임을 지지 않습니다.</li>
+                        <li>- 이용자가 몰을 통해 얻은 정보의 신뢰성, 정확성, 적법성 등에 대해 회사는 보증하지 않으며, 이로 인한 손해에 대해 책임지지 않습니다.</li>
+                        <li>- 회원이 약관, 법령, 공지사항을 위반하여 발생한 손해에 대해서도 회사는 책임을 지지 않습니다.</li>
+                      </ul>
+                    </li><!--8-1-->
+                  </ul>
+                </li><!--8-->
+
+                <li> 제 9장 분쟁 해결 및 관할
+                  <ul>
+                    <li>제 12조 (분쟁 해결 및 관할 법원)
+                      <ul>
+                        <li>- 서비스 이용과 관련해 회사와 이용자 간에 분쟁이 발생한 경우, 양 당사자는 성실히 협의하여 해결합니다.</li>
+                        <li>- 협의가 이루어지지 않을 경우, 분쟁의 관할 법원은 회사 본사가 위치한 지역을 관할하는 법원으로 합니다.</li>
+                      </ul>
+                    </li> <!--9-1-->
+                  </ul>
+                </li><!--9-->
+              </ul>
+            </div> <!--all01-->
+
+            <div class="comment">
+              <p>Greenish 서비스 이용약관에 동의합니다.</p>
+              <p>(회원가입, 주문, 결제, 배송, 환불, 면책 등 권리·의무 규정 포함)</p>
+            </div> <!--comment-->
+
+            <input type="checkbox" id="agree01" class="agree" required>
+            <label for="agree01">약관에 동의합니다 (필수)</label>
+          </div><!--terms01-->
+
+
+          <div class="terms02">
+            <p class="number_title">2. 개인정보 수집 및 이용 동의<span class="asterisk">*</span>
+            </p> <!--number_title-->
+
+            <div class="comment">
+              <p>회원관리, 주문/결제 처리, 배송, 고객 상담 등 서비스 제공을 위해 개인정보를 수집·이용하는 것에 동의합니다.</p>
+            </div> <!--comment-->
+
+            <div class="terms02_text">
+              <ol>
+                <li> 이용약관 동의
+                  <ul>
+                    <li>
+                      - 필수 항목: 이름, 로그인ID(이메일), 비밀번호, 휴대폰번호 또는 전화번호, 배송 주소, 결제 관련 정보
+                    </li>
+                    <li>
+                      - 선택 항목: 생년월일, 성별, 추가 연락처, 마케팅 수신 동의 정보
+                    </li>
+                  </ul>
+                </li> <!--1-->
+
+                <li> 개인정보 수집 및 이용 목적
+                  <ul>
+                    <li>- 회원 가입 및 관리</li>
+                    <li>- 상품 주문, 결제, 배송, 환불 처리</li>
+                    <li>- 고객 상담 및 민원 처리</li>
+                    <li>- 서비스 제공 및 맞춤 서비스 제공</li>
+                    <li>- 마케팅 및 이벤트 정보 제공(선택 동의 시)</li>
+                  </ul>
+                </li> <!--2-->
+
+                <li> 개인정보 보유 및 이용 기간
+                  <ul>
+                    <li>- 회원 탈퇴 또는 개인정보 삭제 요청 시 지체 없이 파기</li>
+                    <li>- 다만, 전자상거래 등 관련 법령에 의해 거래내역·결제기록 등은 일정 기간 보관 가능</li>
+                  </ul>
+                </li><!--3-->
+
+                <li> 동의 거부 권리 및 불이익
+                  <ul>
+                    <li>- 이용자는 동의를 거부할 권리가 있음</li>
+                    <li>- 다만, 동의를 거부할 경우 회원가입, 주문 등 일부 서비스 이용이 제한될 수 있음</li>
+                  </ul>
+                </li> <!--4-->
+              </ol>
+            </div> <!--terms02_text-->
+            
+            <input type="checkbox" id="agree02" class="agree" required>
+            <label for="agree02">약관에 동의합니다 (필수)</label>
+          </div><!--terms02-->
+
+
+          <div class="terms03">
+            <input type="checkbox" id="open_terms03">
+
+            <p class="number_title">3. 개인정보 제3자 제공 동의<span class="asterisk">*</span>
+              <label for="open_terms03" 
+              class="view_terms">약관 전문 보기 ></label>
+            </p> <!--number_title-->
+
+            <div class="all03 all">
+              <label for="open_terms03" class="close"><i class="fa-solid fa-x"></i></label>
+
+              <ul>
+                <li>[개인정보 제3자 제공 동의서]</li>
+                <li>1. 제공받는 자
+                  <ul>
+                    <li>- 배송 업체, 결제 대행사, 고객 상담 서비스 제공 업체 등</li>
+                  </ul>
+                </li><!--1-->
+                <li>2. 제공하는 개인정보 항목
+                  <ul>
+                    <li>- 이름, 연락처, 배송 주소, 결제 정보 등 주문 처리 및 서비스 제공에 필요한 정보</li>
+                  </ul>
+                </li> <!--2-->
+                <li>3. 제공 목적
+                  <ul>
+                    <li>- 상품 배송 및 결제 처리</li>
+                    <li>- 주문/배송 관련 고객 문의 대응</li>
+                    <li>- 부정거래 방지, 사후 고객 지원</li>
+                  </ul>
+                </li> <!--3-->
+                <li>4. 보유 및 이용 기간
+                  <ul>
+                    <li>- 제공 목적이 달성될 때까지 보유 및 이용</li>
+                    <li>- 목적 달성 후 즉시 파기</li>
+                  </ul>
+                </li><!--4-->
+                <li>5. 동의 거부 권리 및 불이익
+                  <ul>
+                    <li>- 이용자는 동의를 거부할 권리가 있음</li>
+                    <li>- 다만, 동의하지 않을 경우 상품 주문·결제 등 서비스 이용이 제한될 수 있음</li>
+                  </ul>
+                </li><!--5-->
+
+              </ul>
+            </div> <!--all03-->
+
+            <div class="comment">
+              <p>배송, 결제, 물류 등 서비스 제공을 위해 필요한 범위 내에서 개인정보를 제3자에게 제공하는 것에 동의합니다.</p>
+            </div> <!--comment-->
+
+            <input type="checkbox" id="agree03" class="agree" required>
+            <label for="agree03">약관에 동의합니다 (필수)</label>
+          </div><!--terms03-->
+
+
+          <div class="terms04">
+            <p class="number_title">4. 마케팅 수신 동의 (이메일/SMS)</p> <!--number_title-->
+
+            <div class="comment">
+              <p>신상품, 할인 쿠폰, 이벤트 정보 수신에 동의합니다</p>
+            </div> <!--comment-->
+
+            <input type="checkbox" id="agree04" class="agree">
+            <label for="agree04">약관에 동의합니다</label>
+          </div><!--terms04-->
+
+          <div class="terms05">
+            <p class="number_title">5. 맞춤형 광고 및 관심정보 활용 동의 </p> <!--number_title-->
+
+            <div class="comment">
+              <p>이용자의 관심사 기반 맞춤형 서비스 및 광고 활용에 동의합니다.</p>
+            </div> <!--comment-->
+
+            <input type="checkbox" id="agree05" class="agree">
+            <label for="agree05">약관에 동의합니다</label>
+          </div><!--terms05-->
+        </div><!--terms_box-->
+      </div>
+
+      <div class="finish">
+        <a href="./login.html" class="back_btn">로그인 페이지로 </a>
+        <button class="join_btn" type="submit">회원가입완료</button>
+      </div>
+
+      <div id="popup" class="popup">
+        <div class="popup_content">
+          <p id="popup_text"></p> <!-- 동적 메시지 표시 -->
+          <div class="popup_btns">
+            <a href="./login.html" id="to_login">로그인 페이지로</a>
+            <a href="../index.html" id="to_home">홈으로</a>
+          </div> <!--popup_btns-->
+        </div> <!--popup_content-->
+      </div> <!--popup-->
+
+  </form>
+
+  
+  
+  
+</body>
+</html>

@@ -1,0 +1,218 @@
+.warp_outer {
+  width: 100%;
+  margin: 100px auto 0; 
+}
+
+.warp_outer .wrap {
+  width: 417px;
+  margin: 0 auto;
+}
+
+.warp_outer .wrap .main_title {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+#find_id, #find_pw {display: none;}
+.find_id, .find_pw {display: none;}
+
+#find_id:checked ~ .label_box label:nth-child(1) {
+  background-color: #17451F;
+  color: white;
+}
+#find_pw:checked ~ .label_box label:nth-child(2) {
+  background-color: #17451F;
+  color: white;
+}
+
+#find_id:checked ~ .find_sheet .find_id {display: block;}
+#find_pw:checked ~ .find_sheet .find_pw {display: block;}
+
+.warp_outer .wrap .label_box {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #17451F; box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.warp_outer .wrap .label_box label {
+  width: 50%;
+  font-size: 16px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  color: #444;
+}
+
+
+/********/
+
+.warp_outer .wrap .find_sheet .find_id form p, 
+.warp_outer .wrap .find_sheet .find_pw form p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+input[name="username"], 
+input[name="user_id"] {
+  width: 100%; height: 40px;
+  padding-left: 8px; box-sizing: border-box;
+  margin-bottom: 20px;
+}
+input[name="phone"] {
+  width: 75%; height: 40px;
+  padding-left: 8px; box-sizing: border-box;
+}
+input[name="email"] {
+  width: 200px; height: 40px;
+  padding-left: 8px; box-sizing: border-box;
+}
+.warp_outer .wrap .find_sheet .find_pw form .email select {
+  width: 120px; height: 40px;
+  color: #444;
+}
+.warp_outer .wrap .find_sheet .find_pw form .email .email_btn {
+  width: 50px; height: 40px;
+  background-color: #17451F;
+  color: white;
+  border: none;
+}
+
+.warp_outer .wrap .find_sheet .find_pw form .email span {
+  font-size: 18px;
+  line-height: 40px;
+  color: #444;
+}
+
+.warp_outer .wrap .find_sheet .find_id form .tell,
+.warp_outer .wrap .find_sheet .find_pw form .email {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.warp_outer .wrap .find_sheet .find_id form .tel_btn {
+  width: 70px; height: 40px;
+  background-color: #17451F;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.warp_outer .wrap .find_sheet .find_id form .id_btn {
+  width: 100%; height: 50px;
+  font-size: 18px;
+  background-color: #17451F;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.warp_outer .wrap .find_sheet .find_pw form .pw_btn {
+  width: 100%; height: 40px;
+  font-size: 16px;
+  background-color: #17451F;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.warp_outer .wrap .find_sheet .find_id form .tel_btn:hover,
+.warp_outer .wrap .find_sheet .find_id form .id_btn:hover,
+.warp_outer .wrap .find_sheet .find_pw form .email_btn:hover,
+.warp_outer .wrap .find_sheet .find_pw form .pw_btn:hover {
+  background-color: #00980A;
+}
+
+
+/**********/
+
+.warp_outer .wrap .back {
+  display: flex;
+  justify-content: end;
+}
+.warp_outer .wrap .back a {
+  display: block;
+  padding: 10px 10px;
+  color: #444;
+  font-size: 12px;
+}
+.warp_outer .wrap a:hover {
+  color: #00980A;
+}
+
+/******/
+  .find_id div.atm, 
+  .find_pw div.atm {
+    display: none;
+    width: 350px; height: 50px;
+    margin-left: 65px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .find_id .atm input[type="text"],
+  .find_pw .atm input[type="text"] {
+    width: 200px; height: 30px;
+    padding-left: 10px; box-sizing: border-box;
+    margin: 0;
+  }
+  .find_id .atm button,
+  .find_pw .atm button {
+    width: 85px; height: 30px;
+    font-size: 13px;
+    background-color: #17451F;
+    color: white;
+    border: none;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+  }
+  .find_id .atm button:hover,
+  .find_pw .atm button:hover {
+    background-color: #00980A;
+  }
+
+  .find_id .atm p, 
+  .find_pw .atm p {
+    padding-top: 25px; box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  /*****/
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup_content {
+    background: white;
+    padding: 30px 40px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+  }
+
+  .popup_btns a {
+    display: inline-block;
+    margin: 10px 15px 0 15px;
+    padding: 10px 20px;
+    background: #00980A;
+    border-radius: 5px;
+    color: white !important;; 
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .popup_btns a:hover {
+    background: #007700;
+  }
